@@ -18,8 +18,7 @@ AFRAME.registerComponent("car-model", {
         const rotation = { x: 0, y: 20, z: 0 };
         this.el.setAttribute("rotation", rotation);
       } else if (this.data.clickCounter === 2) {
-        const rotation = { x: 0, y: 100, z: 0 };
-        this.el.setAttribute("rotation", rotation);
+        // declare rotation and setAtribute
       } else if (this.data.clickCounter === 3) {
         const rotation = { x: 0, y: -200, z: 0 };
         this.el.setAttribute("rotation", rotation);
@@ -34,8 +33,9 @@ AFRAME.registerComponent("car-model", {
         this.el.setAttribute("rotation", rotation);
         const cameraEl = document.querySelector("#camera");
         const position = { x: 0, y: 50, z: 250 };
-        cameraEl.setAttribute("position", position);
-        this.data.clickCounter = 0;
+        //setAttribute for cameraEl
+       
+        // make clickCounter = 0;
       }
     });
   }
