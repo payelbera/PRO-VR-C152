@@ -14,9 +14,9 @@ AFRAME.registerComponent("car-model", {
   update: function() {
     window.addEventListener("click", e => {
       this.data.clickCounter = this.data.clickCounter + 1;
+      
       if (this.data.clickCounter === 1) {
-        const rotation = { x: 0, y: 20, z: 0 };
-        this.el.setAttribute("rotation", rotation);
+        //change the position of the car according to the count of clicks.
       } else if (this.data.clickCounter === 2) {
         // declare rotation and setAtribute
       } else if (this.data.clickCounter === 3) {
@@ -32,7 +32,7 @@ AFRAME.registerComponent("car-model", {
         const rotation = { x: 0, y: -100, z: 0 };
         this.el.setAttribute("rotation", rotation);
         const cameraEl = document.querySelector("#camera");
-        const position = { x: 0, y: 50, z: 250 };
+        //Reset the counter variable and position the car
         //setAttribute for cameraEl
        
         // make clickCounter = 0;
